@@ -19,5 +19,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(lanzar)
         }
 
+        val pantallainit=findViewById<TextView>(R.id.btnlogin)
+        pantallainit.setOnClickListener{
+            val lanzar = Intent(this,PantallaActivity::class.java)
+            startActivity(lanzar)
+        }
+
     }
 }

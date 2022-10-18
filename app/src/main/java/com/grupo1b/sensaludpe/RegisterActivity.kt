@@ -16,5 +16,6 @@ class RegisterActivity : AppCompatActivity() {
             val lanzar = Intent(this,MainActivity::class.java)
             startActivity(lanzar)
         }
+
     }
 }
