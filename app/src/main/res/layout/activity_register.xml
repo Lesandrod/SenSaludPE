@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/idimagen"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+
+                android:text="Registro"
+                android:textColor="#032453"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+
+                android:layout_marginBottom="23dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/idnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:drawablePadding="13dp"
+                    android:hint="Nombres"
+                    android:inputType="text"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+                <EditText
+                    android:id="@+id/idapellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:drawablePadding="13dp"
+                    android:hint="Apellidos"
+                    android:inputType="text"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+
+                <EditText
+                    android:id="@+id/idcelu"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_numero"
+                    android:drawablePadding="13dp"
+                    android:hint="Celular"
+                    android:inputType="number"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+                <EditText
+                    android:id="@+id/idfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_fecha"
+                    android:drawablePadding="13dp"
+                    android:hint="Fecha de nacimiento"
+
+                    android:inputType="date"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+                <EditText
+                    android:id="@+id/idcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_correo"
+                    android:drawablePadding="13dp"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+                <EditText
+                    android:id="@+id/idcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/input_custom"
+                    android:drawableLeft="@drawable/ic_contra"
+                    android:drawablePadding="13dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13dp"
+                    android:textColorHint="#D0938E8E" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnregistrar"
+        android:text="Registrar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/button_rounded"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Iniciar sesión"
+        android:textColor="#032453"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/btnregistrar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
