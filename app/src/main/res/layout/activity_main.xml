@@ -56,7 +56,7 @@
 
 
                 <EditText
-                    android:id="@+id/idcorreo"
+                    android:id="@+id/idcorreologin"
                     android:layout_width="match_parent"
                     android:layout_height="46dp"
                     android:layout_marginBottom="15dp"
@@ -70,7 +70,7 @@
                     android:textColorHint="#D0938E8E" />
 
                 <EditText
-                    android:id="@+id/idcontra"
+                    android:id="@+id/idcontralogin"
                     android:layout_width="match_parent"
                     android:layout_height="46dp"
                     android:layout_marginBottom="2dp"
@@ -103,6 +103,7 @@
         android:background="@drawable/button_rounded"
         />
     <TextView
+        android:id="@+id/registrodir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
